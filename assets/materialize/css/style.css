@@ -1,0 +1,145 @@
+.darker-image {
+  filter: brightness(40%);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.bold {
+  font-weight: bold;
+}
+.blue-border {
+  border: solid 1px #0d47a1;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+#sidenav-overlay {
+  z-index: -1;
+}
+.block {
+  width: 100%;
+}
+.justify {
+  text-align: justify;
+}
+.negative-margin {
+  margin-top: -70px;
+}
+.ribbon {
+  height: 30vh;
+  display: flex;
+}
+.ribbon-items {
+  margin: auto;
+}
+.flex {
+  display: flex;
+  height: 400px;
+}
+.stripe {
+  background: linear-gradient(
+    to right,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient {
+  background-image: linear-gradient(25deg, #e1bee7, #e1bee7, #7b1fa2, #4a148c);
+}
+
+footer.gradient,a.gradient,button.gradient {
+  background-image: linear-gradient(25deg, #ba68c8, #9c27b0, #7b1fa2, #4a148c);
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("Dosis-Regular.woff2") format("woff2"),
+    url("Dosis-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Dosis", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gradient-border {
+  border: 5px solid;
+  border-image: linear-gradient(25deg, #ba68c8, #9c27b0, #7b1fa2, #4a148c) 1;
+}
+
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  width: 280px;
+}
+.mt-2 {
+  margin-top: 24px;
+}
+.logo {
+  width: 110px;
+}
+
+
+/* label color */
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #e040fb  !important;
+}
+.input-field input[type=email]:focus + label {
+  color: #e040fb  !important;
+}
+.input-field input[type=number]:focus + label {
+  color: #e040fb  !important;
+}
+.input-field input[type=text]:focus + label {
+  color: #e040fb  !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #e040fb  !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* label underline focus color */
+.input-field input[type=number]:focus {
+  border-bottom: 1px solid #e040fb  !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #e040fb  !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
